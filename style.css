@@ -1,8 +1,12 @@
-h1 {
+.menu__item:active{
+	background-color: blue;
+}
+
+.main-content__title {
 font-family: 'PT Serif', serif;
 }
 
-p {
+.main-content__discription {
 	font-family: 'Roboto', sans-serif;
 	color: orange;
 }
