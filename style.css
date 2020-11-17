@@ -1,8 +1,9 @@
 .wrapper{
 margin: auto;
 width: 80%;
-
 }
+
+
 .logo, .menu{
 display: inline-block;
 }
@@ -16,12 +17,17 @@ display: inline-block;
 	margin-right: 13%
 	display:block;
 	justify-content: space-between;
-	dorder:dashed 1px red;
+
 }
 
 .logo{
-margin-right: 60%;
-padding: 40px 0;
+
+// padding: 40px 0;
+// font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+width: 190px;
+height: 35px;
+background: url('img/logo.svg');
+
 }
 
 .menu{
@@ -42,6 +48,7 @@ padding-right: 0 ;
 	align-items: center;
 }
 .header{
+padding: 40px 0;
 display: flex;
 justify-content: space-between;
 }
