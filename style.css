@@ -39,7 +39,7 @@ display: inline-block;
 	font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 	color: #000;
 	text-decoration: none;
-	transition: opacity .5s;//для плавности 1 какой элем меняется 2 скорость
+	transition: opacity .5s;  //для плавности 1 какой элем меняется 2 скорость
 }
 
 .menu__item:after {
@@ -59,7 +59,7 @@ display: inline-block;
 	width: 100%;
 }
 
-.menu__item:hover{//когда наводим курсор на ссылку
+.menu__item:hover{  //когда наводим курсор на ссылку
 	opacity: 0.5;
 }
 
