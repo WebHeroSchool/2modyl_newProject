@@ -16,8 +16,6 @@ display: inline-block;
 }
 
 .menu{
-	margin-left: auto;
-  margin-right: 0em;
 	display: flex;
 	align-items: center;
 }
