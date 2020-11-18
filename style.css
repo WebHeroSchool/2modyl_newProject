@@ -21,26 +21,50 @@ display: inline-block;
 }
 
 .logo{
-
-// padding: 40px 0;
-// font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
-width: 190px;
-height: 35px;
-background: url('img/logo.svg');
-
+	// padding: 40px 0;
+	// font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+	width: 190px;
+	height: 35px;
+	background: url('img/logo.svg');
 }
 
 .menu{
-display: flex;
-align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .menu__item{
-padding: 0 13px;
+	position: relative;
+	margin-right: 26px;
+	font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;//для плавности 1 какой элем меняется 2 скорость
+}
+
+.menu__item:after {
+	display: block;
+  content: '';
+	display: block;
+  width: 0;
+	left: 0;
+  height: 3px;
+  background: #0056EC;
+	opacity: 0;
+	transition: opacity .5s,width .5s;
+}
+
+.menu__item:hover:after, menu__item_active::after{
+	opacity: 1;
+	width: 100%;
+}
+
+.menu__item:hover{//когда наводим курсор на ссылку
+	opacity: 0.5;
 }
 
 .menu__item:last-child{
-padding-right: 0 ;
+	margin-right: 0 ;
 }
 
 .img-content{
@@ -48,9 +72,9 @@ padding-right: 0 ;
 	align-items: center;
 }
 .header{
-padding: 40px 0;
-display: flex;
-justify-content: space-between;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-section{
@@ -59,7 +83,7 @@ justify-content: space-between;
 	border: dashed 1px red;
 }
 .main-content__title {
-font-family: 'PT Serif', serif;
+	font-family: 'PT Serif', serif;
 }
 
 .main-content__discription {
