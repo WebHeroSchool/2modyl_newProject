@@ -84,7 +84,7 @@ transition: opacity .5s, width .5s;
 .header{
 	display: flex;
 	padding: 40px 0;
-	margin-bottom: 100px
+	margin-bottom: 100px;
 	justify-content: space-between;
 }
 .main{
