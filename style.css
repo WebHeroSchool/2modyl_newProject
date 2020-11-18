@@ -3,21 +3,8 @@ margin: auto;
 width: 80%;
 }
 
-
 .logo, .menu{
 display: inline-block;
-}
-
-.img-content, .main-content{
-display: inline-block;
-}
-
-.main-content{
-	width: 21%;
-	margin-right: 13%
-	display:block;
-	justify-content: space-between;
-
 }
 
 .logo{
@@ -32,34 +19,55 @@ display: inline-block;
 	display: flex;
 	align-items: center;
 }
+.menu__item_active::after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #0056EC;
 
+}
 .menu__item{
 	position: relative;
 	margin-right: 26px;
 	font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
 	color: #000;
 	text-decoration: none;
-	transition: opacity .5s;  //для плавности 1 какой элем меняется 2 скорость
+	transition: opacity .5s;  // для плавности 1 какой элем меняется 2 скорость
 }
 
 .menu__item:after {
-	display: block;
-  content: '';
-	display: block;
-  width: 0;
-	left: 0;
-  height: 3px;
-  background: #0056EC;
-	opacity: 0;
-	transition: opacity .5s,width .5s;
+ position: absolute;
+ left: 0;
+ display: block;
+ content: '';
+ width: 100%;
+ height: 3px;
+ background: #0056EC;
+ opacity: 0;
+ transition: opacity .5s;
 }
+
+.menu__item:hover:after {
+ position: absolute;
+ left: 0;
+ display: block;
+ content: '';
+ width: 0;
+ height: 3px;
+ background: #0056EC;
+ opacity: 0;
+transition: opacity .5s, width .5s;
+
+}
+
 
 .menu__item:hover:after, menu__item_active::after{
 	opacity: 1;
 	width: 100%;
 }
 
-.menu__item:hover{  //когда наводим курсор на ссылку
+.menu__item:hover{  // когда наводим курсор на ссылку
 	opacity: 0.5;
 }
 
@@ -73,20 +81,38 @@ display: inline-block;
 }
 .header{
 	padding: 40px 0;
-	display: flex;
+	margin-bottom: 100px
 	justify-content: space-between;
 }
-
-.main-section{
-	display: flex;
-	justify-content: space-between;
-	border: dashed 1px red;
-}
-.main-content__title {
-	font-family: 'PT Serif', serif;
+.main{
+	padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/mainImg.svg);
 }
 
-.main-content__discription {
-	font-family: 'Roboto', sans-serif;
-	color: orange;
+.main__title-text_highlight {
+ background: #ECF3FF;
 }
+
+.main__title {
+	margin: 0 0 40px 0;
+	font: bold 50px/65px 'PT Serif', arial, helvetica, sans-serif;
+}
+
+.main__discription {
+	margin: 0 0 41px 0;
+ 	font: 18px/21px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button:hover {
+ opacity: .5;
+}
+
+.main__button {
+	display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+	 transition: opacity .5s;
