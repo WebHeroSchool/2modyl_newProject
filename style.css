@@ -1,4 +1,6 @@
-
+.body{
+	margin: 0;
+}
 .wrapper{
 margin: auto;
 width: 68.5%;
