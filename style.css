@@ -60,7 +60,7 @@
   font: 700 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
-	transition: opacity 0.5s;  // для плавности 1 какой элем меняется 2 скорость
+	transition: opacity 0.5s;
 }
 
 .menu__item::after {
