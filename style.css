@@ -402,3 +402,46 @@ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
 	background-color: #cfd8dc;
 }
  }
+
+ @media (max-width: 376px) {
+
+.wrapper{
+	 width: 80%;
+ }
+.logo{
+margin: 0 0 0 0;
+padding: 0 0;
+}
+
+.logo__circle {
+	width: 32px;
+height: 32px;
+    margin: 2px -18px;
+}
+
+.logo__circle_color_blue {
+  left: 10px;
+top: 4px;
+}
+
+.main__title {
+    margin: 48px 56px 43px 18px;
+font: bold 32px/42px PT Serif, arial, helvetica, sans-serif;
+}
+
+.main__discription {
+    margin: 24px 52px 28px 12px;
+    font: 500 17px/20px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button{
+	padding: 17px 25px;
+  margin-right: 40px;
+	font: 500 15px/19px Roboto, arial, helvetica, sans-serif;
+}
+.main {
+
+	padding: 90% 23px 0;
+	background: top 8vw right 20vw no-repeat url(img/mainimgmob.svg);
+}
+ }
