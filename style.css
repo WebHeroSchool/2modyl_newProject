@@ -114,6 +114,7 @@ padding: 112px 63% 160px 3px;
     margin-block-start: 1.1vw
 }
 .main__button:hover {
+	color:#0000FF;
  opacity: 0.5;
 }
 .main__button {
