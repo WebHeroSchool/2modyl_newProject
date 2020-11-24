@@ -3,21 +3,21 @@
 }
 .wrapper{
 	margin: auto;
-	width: 80%;
+	width: 81%;
 }
 .logo, .menu{
 	display: inline-block;
 }
 .logo{
   position: relative;
-  padding: 40px 0 40px 44px;
+  padding: 33px 0 40px 44px;
   padding-left: 44px;
   font: bold 24px/32px 'PT Serif', arial, helvetica, sans-serif;
 }
 .logo__circle {
   position: absolute;
   left: 0;
-  top: 50%;
+      top: 45%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
@@ -92,12 +92,12 @@
 }
 .header{
 	display: flex;
-	padding: 33px 0;
+	padding: 0px 11px 87px 6px;
 	//  margin-bottom: 86px;
 	justify-content: space-between;
 }
 .main{
-  padding: 106px 63% 160px 0;
+padding: 112px 63% 160px 3px;
   background: top 2vw right no-repeat url(img/mainimg1920.svg);
 }
 .main__title-text_highlight {
@@ -111,7 +111,7 @@
 .main__discription {
   margin: 0 0 41px 0;
     font: 22px/21px Roboto, arial, helvetica, sans-serif;
-    margin-block-start: 1.1vw;
+    margin-block-start: 1.1vw
 }
 .main__button:hover {
  opacity: 0.5;
@@ -147,7 +147,8 @@
 	  font: 18px/31px Roboto, arial, helvetica, sans-serif;
 	}
 	.main__discription {
-	  margin: 41px 90px 47px 1px;
+	      margin: 41px 117px 42px 3px;
+		line-height: 1.3vw;
 	}
 	.hamburger-menu {
   display: none;
@@ -155,25 +156,24 @@
 }
 @media (max-width: 1367px) {
 	.main {
-	  padding: 31px 50% 180px 0;
-	  background: top 1vw left 41vw no-repeat url(img/mainimg.svg);
+		padding: 35px 49% 81px 0px;
+     background: top 1vw left 36vw no-repeat url(img/mainimg.svg);
 	}
-	.wrapper{
-	min-width:94%;
-	max-width:80%;
-	}
+.header{
+	    padding: 0 80px 60px 0;
+}
 	.main__title {
-	  margin: 0 68px 51px 78px;
-	  font: bold 51px/65px 'PT Serif', arial, helvetica, sans-serif;
-	  line-height: 4.5vw;
+		margin: 0 68px 46px 75px;
+    font: bold 51px/65px 'PT Serif', arial, helvetica, sans-serif;
+    line-height: 4.7vw;
 	}
 	.main__button {
 	  font: 14px/16px Roboto, arial, helvetica, sans-serif;
-	  padding: 7px 0;
-	  margin: 1px 0 0 80px;
+		padding: 13px 19px;
+margin: -2px 1px 0 75px;
 	}
 	.main__discription {
-	  margin: 0 100px 42px 82px;
+	  margin: 0 90px 42px 75px;
 	  font: 18px/21px Roboto, arial, helvetica, sans-serif;
 	  margin-block-start: 1.1vw;
 	}
@@ -183,11 +183,15 @@
 	  font: 600 13px/21px Roboto, arial, helvetica, sans-serif;
 	}
 	.logo {
-	  margin: 0 0 5px 83px;
+	 margin: 0 0 5px 76px;
+	 padding: 33px 0 40px 44px;
 	}
 	.hamburger-menu {
 	  display: none;
 	  }
+		.logo__circle{
+			top: 44%;
+		}
 }
 
 @media (max-width: 1024px) {
@@ -199,13 +203,14 @@
 	}
 
 	.header{
-		       padding: 0px 22px 48px 0px;
+    padding: 0px 6px 48px 0px;
 	}
 	.logo__circle {
 	  margin: -3px -57px;
 	}
 	.logo__text {
-	  margin: 0 -56px;
+		margin: 1px -56px;
+padding: 2px 0px 0 0;
 	}
 	.menu__item {
 	  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
@@ -223,19 +228,19 @@
 		background: top 3vw left 42vw no-repeat url(img/mainimg.svg);
 	}
 	.main__title {
-	margin: -12px 0 38px 16px;
+	    margin: -9px 0 38px 8px;
 	  font: bold 50px/66.25px 'PT Serif', arial, helvetica, sans-serif;
 	  line-height: 6.5vw;
 	}
 	.main__discription {
-	margin: 0 62px 41px 16px;
+    margin: 0 62px 41px 9px;
 	  font: 18px/21px Roboto, arial, helvetica, sans-serif;
 	}
 	.main__button {
 	  display: inline-block;
 	  font: 14px/16px Roboto, arial, helvetica, sans-serif;
 	  padding: 14px 22px;
-		margin: 0 0 0 16px;
+		margin: 0 0 0 7px;
 	}
 	.hamburger-menu {
 	  display: none;
@@ -262,13 +267,14 @@
 
   .main__title {
     margin: 60px 0 30px 25px;
-    font: bold 40px/55px 'pt_serifbold', arial, helvetica, sans-serif;
+    font: bold 40px/55px 'PT Serif', arial, helvetica, sans-serif;
+	  line-height: 4.5vw;
   }
 
   .main__subtitle {
     margin: 0 0 55px 25px;
     padding: 0 1px;
-    font: 14px/18px 'robotoregular', arial, helvetica, sans-serif;
+    font: 14px/18px Roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
@@ -330,7 +336,7 @@
 	 display: block;
 	 padding: 12px 24px;
 	 color: #333;
-	 font: 500 20px/24px 'robotoregular', sans-serif;
+	 font: 500 20px/24px Roboto, sans-serif;
 	 text-decoration: none;
 	 transition-duration: 0.25s;
  }
@@ -388,13 +394,14 @@
 
  .main__title {
 	 margin-bottom: 35px;
-	 font: bold 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
+	 font: bold 30px/39px 'PT Serif', arial, helvetica, sans-serif;
+   line-height: 4.5vw;
 	 margin: 56px 6px 35px 12px;
 	 text-align: center;
 	}
 
  .main__discriptione {
-	 font: 500 16px/19px 'robotoregular', arial, helvetica, sans-serif;
+	 font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
 	 padding: 0 41px;
 	 letter-spacing: 0.2px;
 	 margin: 0 0 48px 0;
@@ -404,7 +411,7 @@
 	 letter-spacing: 0.7px;
 	 padding: 14px 24px;
 	 margin-left: 25vw;
-	 font: 500 12px/16px 'robotoregular', arial, helvetica, sans-serif;
+	 font: 500 12px/16px Roboto, arial, helvetica, sans-serif;
  }
 }
 
@@ -412,8 +419,12 @@
 	.wrapper{
 		 width: 80%;
 	 }
+
+	 .logo__text{
+		 display: none;
+	 }
 	.logo{
-	margin: 0 0 0 0;
+    margin: 30px 0 0 23px;
 	padding: 0 0;
 	}
 
@@ -424,29 +435,29 @@
 	}
 
 	.logo__circle_color_blue {
-	  left: 10px;
-	top: 4px;
+		left: 11px;
+     top: 8px;
 	}
 
 	.main__title {
-	    margin: 48px 56px 43px 18px;
-	font: bold 32px/42px PT Serif, arial, helvetica, sans-serif;
+	margin: -8px 49px 43px 21px;
+	font: bold 32px/42px 'PT Serif', arial, helvetica, sans-serif;
 	}
 
 	.main__discription {
-	    margin: 24px 52px 28px 12px;
+margin: -3px 72px 28px 39px;
 	    font: 500 17px/20px Roboto, arial, helvetica, sans-serif;
 	}
 
 	.main__button{
-		padding: 17px 25px;
-	  margin-right: 40px;
-		font: 500 15px/19px Roboto, arial, helvetica, sans-serif;
+		padding: 17px 22px;
+	    margin-right: 44px;
+	    font: 500 14px/19px Roboto, arial, helvetica, sans-serif;
+    margin-left: 3vw;
 	}
 	.main {
 
-		padding: 90% 23px 0;
-		background: top 8vw right 20vw no-repeat url(img/mainimgmob.svg);
-		background-position: center;
+	    padding: 90% 26px 0 14px;
+background: top 6vw right 25vw no-repeat url(img/mainimgmob.svg);
 	}
  }
