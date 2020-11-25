@@ -114,7 +114,8 @@ padding: 112px 63% 160px 3px;
     margin-block-start: 1.1vw
 }
 .main__button:hover {
- opacity: 0.5;
+
+animation: blik 5s infinite ease-in-out;
 }
 .main__button {
   display: inline-block;
@@ -124,20 +125,34 @@ padding: 112px 63% 160px 3px;
   padding: 15px 20px;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity 0.5s;
-  animation-duration: 0.3s;
-  animation-name: slidein;
+
+
  }
- @keyframes slidein {
-   from{
-   margin-right: 100%;
-   width: 300%;
-	 }
-	 to {
-	   margin-right: 0%;
-	   width: 100%;
-	   }
-	 }
+
+
+	@keyframes blik{
+		0% {
+			border: solid 5px #7FC7FF;
+	 opacity: 0.2;
+ }
+ 25%{
+			border: solid 5px #7FC7FF;
+	 opacity: 0.5;
+ }
+ 50% {
+			border: solid 5px #7FC7FF;
+	 opacity: 0.75;
+ }
+ 75%{
+			border: solid 5px #7FC7FF;
+	 opacity: 0.5;
+ }
+ 100% {
+				border: solid 5px #7FC7FF;
+	 opacity: 0.2;
+	}
+
+	}
 	@media (max-width: 1920px) {
 	.main__title {
 	  margin: 2px 3px 40px 3px;
